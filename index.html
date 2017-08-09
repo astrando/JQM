@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" href="themes/share.min.css" />
+  		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+
+	<body>
+		
+		<div data-role="page" id="page1" data-theme="d">
+			<div data-role="header">
+				<h2>Header</h2>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" data-icon="home">Home</a></li>
+						<li><a href="#page2" data-icon="grid">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div data-role="collapsible">
+					<h1>Past Work</h1>
+					<p>Look at my past work...</p>
+				</div>
+				<div data-role="collapsible">
+					<h1>Education</h1>
+					<p>Teaching myself to code...</p>
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="page" id="page2" data-theme="d">
+			<div data-role="header">
+				<h2>Header</h2>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" data-icon="home">Home</a></li>
+						<li><a href="#page2" data-icon="grid">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1>Contact me</h1>
+				<form>
+					<label for="essay">Tell us what you think</label>
+					<textarea name="essay" id="essay" placeholder="Tell us how great we are..."></textarea>
+					<label for="range">Rate us out of 10</label>
+					<input type="range" name="rate" id="rate" min="0" max="10"/>
+					<input type="submit" name"go" id="go" value="Rate my App!"/>
+				</form>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>
